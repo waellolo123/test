@@ -1,0 +1,680 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/* small nav */
+.nav1 {
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+.nav1-list {
+    display: flex;
+}
+.nav1-item {
+    padding: 5px; 
+    background-color: rgb(253, 215, 0);
+}
+.green {
+    background-color: rgb(55, 230, 186);
+}
+.nav1-item a{
+   margin: 0 20px;
+   text-decoration: none;
+   color: black;
+}
+/* first nav */
+.navbar1 {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar1-list {
+    display: flex;
+}
+.navbar1-item {
+   align-self: flex-end;
+   margin-right: 100px;
+}
+.nv1I{
+   color: rgb(73, 73, 73);
+   font-weight: 500;
+}
+.red {
+    color: rgb(201, 0, 0);
+}
+/* nav3 */
+.nav3 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav3-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.nav3-items-container {
+    padding: 5px 20px;
+    display: flex;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+.nav3-span {
+    color: gray;
+}
+.nav3-icon {
+    color: gray;
+    font-size: 1.2em;
+}
+.nav3-select {
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    font-size: 1em;
+}
+.nav3-btn {
+    padding: 15px 40px;
+    background-color: rgb(55, 230, 186);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.nav3-span-right {
+    margin-left: 20px;
+    font-weight: bold;
+}
+.Plus {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/* first */
+.first {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://api.wechalet.com/storage/24771/oUM1DsjX.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-title {
+    color: white;
+    letter-spacing: .2em;
+}
+.first-btn {
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(55, 230, 186);
+    color: white;
+    margin: 30px 0;
+    cursor: pointer;
+}
+/* YELLOW */
+.yellow {
+    width: 100%;
+    display: flex;
+}
+.yellow-light {
+    padding: 15px 0;
+    flex: 2;
+    text-align: center;
+    background-color: rgb(253, 215, 0);
+    color: rgb(58, 58, 58);
+}
+.yellow-dark {
+    padding: 15px 0;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(253, 164, 0);
+    color: rgb(58, 58, 58);
+}
+/* annoncer */
+.annoncer {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(4, 4, 68, 0.219);
+}
+.annoncer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.annoncer-link {
+    margin: 0 30px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+.annoncer-btn {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: rgb(4, 4, 68);
+    border: 1px solid rgb(4, 4, 68);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+/* cards-section */
+.cards-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    position: relative;
+    margin: 15px;
+}
+.card-absolute {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+.card-span {
+    color: white;
+    position: absolute;
+    top: 275px;
+    left: 90px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.card-absolute .pp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+
+}
+.card-top {
+   width: 100%;
+   height: 300px; 
+}
+.card-top-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-title {
+    margin-top: 40px;
+    letter-spacing: .1em;
+    color: rgb(41, 41, 41);
+}
+.card-titleSm {
+    margin-top: 5px;
+    color: rgb(15, 204, 157);
+    font-size: 1.1em;
+}
+.card-para {
+    width: 80%;
+    line-height: 1.2em;
+    color: rgb(161, 161, 161);
+    text-align: center;
+}
+/* voyage */
+.voyage {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.voyage-titleBg {
+    color: rgb(33, 6, 65);
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.voyage-btn {
+    padding: 15px 30px;
+    background-color: white;
+    border: 1ox solid rgb(33, 6, 65);
+    color: rgb(33, 6, 65);
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    letter-spacing: .2em;
+}
+.voyage-container {
+    width: 100%;
+    display: flex;
+    background-color: yellow;
+}
+.voyage-left {
+   height: 500px; 
+   flex: 1;
+   background-color: beige;
+}
+.voyage-left-top {
+    display: flex;
+}
+.voyage-left-top-left,
+.voyage-left-top-right  {
+    height: 250px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid white;
+}
+.voyage-left-top-right-img, 
+.voyage-left-top-left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.voyage-left-top-left-btn,
+.voyage-left-top-right-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+}
+.voyage-left-top-left-btn {
+    background-color: orangered;
+    color: white;
+    font-size: 1.2em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+.voyage-left-top-right-btn {
+    background-color: rgb(15, 204, 157);
+    color: white;
+    font-size: 1.2em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+.left-top-icon {
+    margin-left: 30px;
+}
+.voyage-left-bottom {
+    width: 100%;
+    height: 250px;
+    background-image: url('https://25174313.fs1.hubspotusercontent-eu1.net/hubfs/25174313/assets_comparehero/when-is-the-best-time-to-pay-credit-card-bill.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid white;
+}
+.voyage-right {
+    flex: 1;
+    border: 10px solid white;
+    background-image: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwaGFwcHl8ZW58MHx8MHx8&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.voyage-right-para {
+    color: white;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    width: 90%;
+}
+.voyage-right-title {
+    color: white;
+    z-index: 100;
+    font-size: 3em;
+    margin-top: 10px;
+    letter-spacing: .1em;
+}
+.voyage-right-btn {
+    padding: 15px 30px;
+    background-color: rgb(253, 207, 0);
+    z-index: 100;
+    border: none;
+    border-radius: 30px;
+    color: rgb(39, 39, 39);
+    margin-top: 10px;
+    font-weight: 500;
+}
+.right-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 204, 157, 0.507);
+}
+.voyage-bottom {
+    width: 100%;
+    height: 250px;
+    border: 10px solid white;
+    display: flex;
+
+}
+.voyage-bottom-left{
+    flex: 2;
+    background-color: rgb(33, 6, 65);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.voyage-bottom-left-para {
+    font-size: 1.8em;
+    color: white;
+    font-weight: 400;
+}
+.voyage-bottom-left-title {
+    color: white;
+    margin: 10px 0;
+    font-size: 2em;
+    text-align: center;
+}
+.voyage-bottom-left-btn {
+    background-color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    color: rgb(33, 6, 65);
+    font-weight: bold;
+}
+.voyage-bottom-right {
+    flex: 3;
+    background-image: url('https://i.ytimg.com/vi/dvI75yHBHdQ/maxresdefault.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.voyage-bttom-right-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 6, 65, 0.733);
+}
+.voyage-bottom-right-para {
+    color: white;
+    z-index: 100;
+    line-height: 1.5em;
+}
+/* gagnez */
+.gagnez {
+    width: 100%;
+    margin-top: 100px;
+}
+.gagnez2 {
+    margin-top: 0;
+}
+.gagnez-container {
+    display: flex;
+}
+.gagnez-left{
+    flex: 1;
+    height: 600px;
+    background-image: url('https://possifoundation.co.za/wp-content/uploads/happy-people-friends.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gagnez-left2{
+    flex: 1;
+    height: 600px;
+    background-image: url('https://www.usnews.com/cmsmedia/e2/6b/cbbee6c24081b6191ac5edd50914/smalltown.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gagnez-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gagnez-right-top,
+.gagnez-right-bottom {
+    margin-left: 50px;
+    width: 80%;
+
+}
+.gagnez-top-title {
+    display: flex;
+    align-items: center;
+}
+.gagnez-title-span {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(33, 6, 65, 0.733);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.gagnez-titleBg {
+    color: rgba(33, 6, 65, 0.733);
+    font-size: 1.8em;
+}
+.gagnez-title-span2 {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 201, 151);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.gagnez-titleBg2 {
+    color: rgb(0, 201, 151);
+    font-size: 1.8em;
+}
+
+.gagnez-para2 {
+    width: 90%;
+    margin-top: 15px;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.gagnez-para {
+    width: 90%;
+    margin-top: 15px;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.gagnez-right-bottom {
+    margin-top: 50px;
+    width: 80%;
+}
+.gagnez-title-span-bottom {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(206, 99, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.title-span-bottom-icon {
+    color: rgb(255, 255, 255);
+}
+.gagnez-titleBg-bottom {
+    color: rgb(206, 99, 0);
+    font-size: 1.8em;
+}
+.gagnez-title-span-bottom2 {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(223, 189, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.gagnez-titleBg-bottom2 {
+    color: rgb(223, 189, 0);
+    font-size: 1.8em;
+}
+/* yellow bottom */
+.yellow-bottom {
+    width: 100%;
+    background-color: rgb(255, 196, 0);
+}
+.yellow-bottom-container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yellow-bottom-title {
+    margin-right: 50px;
+    margin-left: 100px;
+}
+.yellow-bottom-title-span {
+    color: rgb(0, 173, 0);
+}
+.yellow-bottom-search {
+    background-color: white;
+    height: 30px;
+
+
+}
+.yellow-bottom-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-right: 100px;
+}
+.yellow-bottom-btn {
+    padding: 0 20px;
+    background-color: green;
+    border: none;
+    color: white;
+    height: 100%;
+}
+/* footer */
+.footer {
+    width: 100%;
+    padding: 50px;
+    background-color: #1f0142;
+}
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footer-title {
+    color: white;
+    margin-bottom: 30px;
+}
+.footer-titleSm {
+    color: white;
+    margin: 10px 0;
+}
+.footer-bottom {
+
+
+}
+.footer-bottom-title {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.footer-bottom-socials {
+    display: flex;
+    gap: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.footer-icons {
+    font-size: 2em;
+}
+
+
+
+
+
+
+
