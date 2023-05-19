@@ -17,6 +17,14 @@ a {
     text-decoration: none;
 }
 /* small nav */
+.humburger {
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
 .nav1 {
     display: flex;
     position: absolute;
@@ -47,10 +55,12 @@ a {
 }
 .navbar1-list {
     display: flex;
+    transition: .4s ease;
 }
 .navbar1-item {
    align-self: flex-end;
    margin-right: 100px;
+   transition: .4s ease;
 }
 .nv1I{
    color: rgb(73, 73, 73);
@@ -284,20 +294,20 @@ a {
 .voyage-container {
     width: 100%;
     display: flex;
-    background-color: yellow;
 }
 .voyage-left {
    height: 500px; 
    flex: 1;
-   background-color: beige;
 }
 .voyage-left-top {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .voyage-left-top-left,
 .voyage-left-top-right  {
     height: 250px;
-    flex: 1;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -597,6 +607,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .yellow-bottom-title {
     margin-right: 50px;
@@ -608,8 +619,7 @@ a {
 .yellow-bottom-search {
     background-color: white;
     height: 30px;
-
-
+    margin: 10px;
 }
 .yellow-bottom-input {
     background-color: transparent;
@@ -642,7 +652,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    flex-wrap: wrap;
 }
 .footer-title {
     color: white;
@@ -653,8 +663,9 @@ a {
     margin: 10px 0;
 }
 .footer-bottom {
-
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .footer-bottom-title {
     color: white;
@@ -670,6 +681,204 @@ a {
 }
 .footer-icons {
     font-size: 2em;
+}
+@media screen and (max-width: 1410px) {
+    .nav3-container {
+        width: 90%;
+        flex-direction: column;
+    }
+    .nav3-items-container {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav3-btn {
+        margin-top: 10px;
+    }
+    .yellow-bottom-container {
+        width: 100%;
+    }
+    .voyage-bottom-left-para {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .voyage-bottom-left-title {
+        font-size: 1.4em;
+    }
+    .voyage-bottom {
+        height: auto;
+    }
+    .gagnez-left {
+        width: 100%;
+    }
+    .gagnez-right {
+        width: 100%;
+        height: auto;
+    }
+    .gagnez-right-bottom {
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width: 1000px){
+    .yellow-bottom-container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px){
+    .navbar1 {
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar1-item {
+        margin: 0 20px;
+    }
+    .first-title {
+        font-size: 1.4em;
+    }
+    .voyage-container {
+       flex-direction: column;
+    }
+    .voyage-right {
+        padding: 20px;
+    }
+    .voyage-bottom {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .nav1 {
+        top: 10px;
+        right: 10px;
+    }
+    .navbar1-item {
+        align-self: center;
+        margin-right: 0px;
+     }
+    .nv1I {
+        font-size: 1em;
+    }
+    .navbar1-container {
+       width: 100%;
+       position: relative;
+    }
+    .humburger {
+        visibility: visible;
+    }
+    .navbar1-list {
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        transition: .4s ease;
+        visibility: hidden;
+    }
+    .navbar1-list.active {
+        right: 0;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar1-item {
+        align-self: center;
+        margin-right: 0;
+        margin: 20px 0;
+     }
+    .first-title {
+        font-size: 1em;
+    }
+    .yellow-bottom-title {
+        margin: 0;
+        text-align: center;
+       font-size: 1em; 
+    }
+    .voyage {
+       height: auto;
+       margin-top: 0;
+    }
+    .voyage-left {
+       height: auto;
+       flex-direction: column;
+    }
+    .voyage-left-top {
+       height: auto;
+    }
+    .voyage-left-top-left,
+    .voyage-left-top-right {
+        width: 100%;
+    }
+    .voyage-right-para {
+        font-size: 1em;
+    }
+    .voyage-right-title {
+        font-size: 1.5em;
+    }
+    .voyage-right-btn {
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+   .first-title {
+    text-align: center;
+    width: 80%;
+    line-height: 1.5em;
+   }
+   .nav1-item a {
+     margin: 0 5px;
+   }
+   .voyage-titleBg {
+    font-size: 1.5em;
+   }
+   .yellow-title {
+     font-size: 1em;
+   }
+   .annoncer-links {
+     flex-direction: column;
+     gap: 10px;
+   }
+   .voyage-btn {
+    margin: 10px 0;
+   }
+   .voyage-bottom-right {
+    padding: 15px;
+   }
+   .voyage-bottom-right-para {
+    width: 100%;
+   }
+   .yellow-bottom-title {
+    width: 80%;
+    line-height: 1.5em;
+   }
+   .yellow-bottom-input {
+      padding: 5px;
+   }
+   .footer-top-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    margin: 10px 0;
+    width: 100%;
+   }
+   .footer-bottom {
+    align-items: center;
+    justify-content: center;
+   }
+   .footer-bottom-title {
+    margin: 0;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+   }
+   .footer-bottom-socials {
+    margin: 0;
+    margin-top: 10px;
+   }
 }
 
 
