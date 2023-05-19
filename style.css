@@ -227,7 +227,7 @@ a {
     margin: 15px;
     opacity: 0;
     transform: translateY(500px);
-    transition: 1.5s ease;
+    transition: 2s ease;
 }
 .card.active {
     opacity: 1;
