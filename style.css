@@ -108,12 +108,20 @@ a {
     background-color: rgb(245, 245, 245);
     font-size: 1em;
 }
+.nav3-select:hover {
+    background-color: white;
+}
 .nav3-btn {
     padding: 15px 40px;
     background-color: rgb(55, 230, 186);
     color: white;
     border: none;
     border-radius: 3px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.nav3-btn:hover {
+    background-color: rgb(0, 155, 116);
 }
 .nav3-span-right {
     margin-left: 20px;
@@ -148,6 +156,10 @@ a {
     color: white;
     margin: 30px 0;
     cursor: pointer;
+    transition: .4s ease;
+}
+.first-btn:hover {
+    background-color: rgb(0, 155, 116);
 }
 /* YELLOW */
 .yellow {
@@ -213,6 +225,13 @@ a {
     width: 300px;
     position: relative;
     margin: 15px;
+    opacity: 0;
+    transform: translateY(500px);
+    transition: 1.5s ease;
+}
+.card.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 .card-absolute {
     position: absolute;
@@ -313,6 +332,7 @@ a {
     align-items: center;
     justify-content: center;
     border: 10px solid white;
+    transition: .4s ease;
 }
 .voyage-left-top-right-img, 
 .voyage-left-top-left-img {
@@ -336,6 +356,10 @@ a {
    display: flex;
    align-items: center;
    justify-content: space-between; 
+   transition: .4s ease;
+}
+.voyage-left-top-left-btn:hover {
+    background-color: rgba(255, 68, 0, 0.507);
 }
 .voyage-left-top-right-btn {
     background-color: rgb(15, 204, 157);
@@ -344,6 +368,10 @@ a {
    display: flex;
    align-items: center;
    justify-content: space-between; 
+   transition: .4s ease;
+}
+.voyage-left-top-right-btn:hover {
+    background-color: rgba(15, 204, 157, 0.507);
 }
 .left-top-icon {
     margin-left: 30px;
@@ -394,6 +422,11 @@ a {
     color: rgb(39, 39, 39);
     margin-top: 10px;
     font-weight: 500;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.voyage-right-btn:hover {
+    color: white;
 }
 .right-cover {
     position: absolute;
@@ -433,12 +466,19 @@ a {
 }
 .voyage-bottom-left-btn {
     background-color: #fff;
-    border: none;
+    border: 1px solid rgb(33, 6, 65);
     padding: 15px 30px;
     margin-top: 10px;
     border-radius: 30px;
     color: rgb(33, 6, 65);
     font-weight: bold;
+    transition: .4s ease;
+}
+.voyage-bottom-left-btn:hover {
+    background-color: rgb(33, 6, 65);
+    border: 1px solid white;
+    color: white;
+
 }
 .voyage-bottom-right {
     flex: 3;
@@ -715,6 +755,7 @@ a {
 }
 .footer-icons {
     font-size: 2em;
+    cursor: pointer;
 }
 @media screen and (max-width: 1410px) {
     .nav3-container {
@@ -896,9 +937,23 @@ a {
    .yellow-title {
      font-size: 1em;
    }
+   .annoncer {
+    padding: 10px 0;
+    justify-content: center;
+    gap: 5px;
+   }
    .annoncer-links {
      flex-direction: column;
      gap: 10px;
+   }
+   .annoncer-link {
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0;
+   }
+   .annoncer-btn {
+    padding: 5px 20px;
+    font-size: 1em;
    }
    .voyage-btn {
     margin: 10px 0;
@@ -935,6 +990,96 @@ a {
     margin: 0;
     margin-top: 10px;
    }
+}
+@media screen and (max-width: 400px){
+    .voyage-btn {
+        padding: 10px;
+        font-size: .8em;
+    }
+   .voyage-titleBg {
+    font-size: 1.2em;
+   }
+   .voyage-left-top-left-btn {
+    font-size: 1em;
+   }
+   .voyage-left-top-right-btn {
+    font-size: 1em;
+   }
+   .voyage-bottom-left-title {
+    font-size: 1em;
+   }
+   .gagnez-right-top {
+     margin: 0;
+   }
+   .gagnez-titleBg {
+    font-size: 1em;
+   }
+   .gagnez-title-span {
+    width: 30px;
+    height: 30px;
+   }
+   .gagnez-title-span-bottom {
+    width: 30px;
+    height: 30px;
+   }
+   .gagnez-top-title {
+    width: 100%;
+    margin: 0;
+   }
+   .gagnez-right-bottom {
+    margin: 0;
+   }
+   .gagnez-titleBg-bottom {
+    font-size: 1em;
+   }
+   .gagnez-title-span-bottom {
+    font-size: 1em;
+   }
+   .gagnez-para {
+    width: 100%;
+    text-align: center;
+   }
+   /* gagnez 2 */
+   .gagnez2-right-top {
+    margin: 0;
+  }
+  .gagnez2-titleBg {
+   font-size: 1em;
+  }
+  .gagnez2-top-title {
+   width: 100%;
+   margin: 0;
+  }
+  .gagnez2-title-span {
+    width: 30px;
+    height: 30px;
+   }
+   .gagnez2-title-span-bottom {
+    width: 30px;
+    height: 30px;
+   }
+  .gagnez2-right-bottom {
+   margin: 0;
+  }
+  .gagnez2-titleBg-bottom {
+   font-size: 1em;
+  }
+  .gagnez2-title-span-bottom {
+   font-size: 1em;
+  }
+  .gagnez2-para {
+   width: 100%;
+   text-align: center;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer-bottom-title {
+        
+  }
+  .footer-bottom-socials {
+    gap: 10px;
+  }
 }
 
 
