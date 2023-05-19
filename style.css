@@ -470,14 +470,11 @@ a {
     width: 100%;
     margin-top: 100px;
 }
-.gagnez2 {
-    margin-top: 0;
-}
 .gagnez-container {
     display: flex;
 }
 .gagnez-left{
-    flex: 1;
+    width: 50%;
     height: 600px;
     background-image: url('https://possifoundation.co.za/wp-content/uploads/happy-people-friends.jpg');
     background-position: center;
@@ -493,7 +490,7 @@ a {
     background-repeat: no-repeat;
 }
 .gagnez-right {
-    flex: 1;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -525,30 +522,6 @@ a {
     color: rgba(33, 6, 65, 0.733);
     font-size: 1.8em;
 }
-.gagnez-title-span2 {
-    font-size: 1.5em;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(0, 201, 151);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-}
-.gagnez-titleBg2 {
-    color: rgb(0, 201, 151);
-    font-size: 1.8em;
-}
-
-.gagnez-para2 {
-    width: 90%;
-    margin-top: 15px;
-    color: rgb(43, 43, 43);
-    font-weight: 600;
-    line-height: 1.5em;
-}
 .gagnez-para {
     width: 90%;
     margin-top: 15px;
@@ -579,20 +552,81 @@ a {
     color: rgb(206, 99, 0);
     font-size: 1.8em;
 }
-.gagnez-title-span-bottom2 {
+/* gagnez 2 */
+.gagnez2 {
+    width: 100%;
+}
+.gagnez2-container {
+    display: flex;
+}
+.gagnez2-left{
+    width: 50%;
+    height: 600px;
+    background-image: url('https://www.usnews.com/cmsmedia/e2/6b/cbbee6c24081b6191ac5edd50914/smalltown.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gagnez2-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gagnez2-right-top,
+.gagnez2-right-bottom {
+    margin-left: 50px;
+    width: 80%;
+}
+.gagnez2-top-title {
+    display: flex;
+    align-items: center;
+}
+.gagnez2-title-span {
     font-size: 1.5em;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(223, 189, 0);
+    background-color: rgb(55, 230, 186);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 5px;
 }
-.gagnez-titleBg-bottom2 {
-    color: rgb(223, 189, 0);
+.gagnez2-titleBg {
+    color: rgb(55, 230, 186);
+    font-size: 1.8em;
+}
+.gagnez2-para {
+    width: 90%;
+    margin-top: 15px;
+    color: rgb(43, 43, 43);
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.gagnez2-right-bottom {
+    margin-top: 50px;
+    width: 80%;
+}
+.gagnez2-title-span-bottom {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(235, 231, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.title-span-bottom-icon {
+    color: rgb(255, 255, 255);
+}
+.gagnez2-titleBg-bottom {
+    color: rgb(235, 231, 0);
     font-size: 1.8em;
 }
 /* yellow bottom */
@@ -722,8 +756,29 @@ a {
     
 }
 @media screen and (max-width: 1000px){
+    .gagnez-container {
+        flex-direction: column;
+    }
     .yellow-bottom-container {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 1149px){
+    .gagnez-container {
+        flex-direction: column-reverse;
+    }
+    .gagnez-right {
+        padding: 20px;
+    }
+    .gagnez2-container {
+        flex-direction: column;
+    }
+    .gagnez2-left {
+        width: 100%;
+    }
+    .gagnez2-right {
+        width: 100%;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 1000px){
