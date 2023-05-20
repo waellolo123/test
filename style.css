@@ -252,7 +252,6 @@ a {
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid white;
-
 }
 .card-top {
    width: 100%;
@@ -280,7 +279,7 @@ a {
     font-size: 1.1em;
 }
 .card-para {
-    width: 80%;
+    width: 90%;
     line-height: 1.2em;
     color: rgb(161, 161, 161);
     text-align: center;
@@ -441,8 +440,7 @@ a {
     height: 250px;
     border: 10px solid white;
     display: flex;
-
-}
+} 
 .voyage-bottom-left{
     flex: 2;
     background-color: rgb(33, 6, 65);
@@ -540,7 +538,6 @@ a {
 .gagnez-right-bottom {
     margin-left: 50px;
     width: 80%;
-
 }
 .gagnez-top-title {
     display: flex;
@@ -955,6 +952,9 @@ a {
     padding: 5px 20px;
     font-size: 1em;
    }
+   .card-para {
+    width: 90%;
+   }
    .voyage-btn {
     margin: 10px 0;
    }
@@ -963,6 +963,21 @@ a {
    }
    .voyage-bottom-right-para {
     width: 100%;
+   }
+   .gagnez {
+    margin-top: 30px;
+   }
+   .gagnez-left{
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    background-size: contain;
+   }
+   .gagnez2-left{
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    background-size: contain;
    }
    .yellow-bottom-title {
     width: 80%;
@@ -1008,6 +1023,9 @@ a {
    .voyage-bottom-left-title {
     font-size: 1em;
    }
+   .gagnez-right {
+     padding: 10px;
+   }
    .gagnez-right-top {
      margin: 0;
    }
@@ -1017,14 +1035,16 @@ a {
    .gagnez-title-span {
     width: 30px;
     height: 30px;
+    font-size: 1em;
    }
    .gagnez-title-span-bottom {
     width: 30px;
     height: 30px;
+    font-size: 1em;
    }
    .gagnez-top-title {
     width: 100%;
-    margin: 0;
+    margin-top: 10px;
    }
    .gagnez-right-bottom {
     margin: 0;
@@ -1040,6 +1060,9 @@ a {
     text-align: center;
    }
    /* gagnez 2 */
+   .gagnez2-right {
+    padding: 10px;
+   }
    .gagnez2-right-top {
     margin: 0;
   }
@@ -1048,11 +1071,12 @@ a {
   }
   .gagnez2-top-title {
    width: 100%;
-   margin: 0;
+   margin-top: 10px;
   }
   .gagnez2-title-span {
     width: 30px;
     height: 30px;
+    font-size: 1em;
    }
    .gagnez2-title-span-bottom {
     width: 30px;
@@ -1071,11 +1095,22 @@ a {
    width: 100%;
    text-align: center;
   }
+  .yellow-bottom-container {
+    padding: 5px;
+  }
+  .yellow-bottom-search {
+    width: 95%;
+    height: auto;
+  }
+  .yellow-bottom-search-input {
+    padding: 2px;
+  }
+  .yellow-bottom-btn {
+    padding: 10px;
+    justify-self: flex-end;
+  }
   .footer {
     padding: 20px;
-  }
-  .footer-bottom-title {
-        
   }
   .footer-bottom-socials {
     gap: 10px;

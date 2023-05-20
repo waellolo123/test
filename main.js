@@ -1,6 +1,7 @@
 const navBtn = document.querySelector('.humburger')
 const menu = document.querySelector('.navbar1-list')
 const cards = document.querySelectorAll('.card')
+const section = document.querySelector('.voyage-bottom')
 
 // nav slide
 navBtn.addEventListener('click', () => {
@@ -8,8 +9,9 @@ navBtn.addEventListener('click', () => {
 })
 // Scroll Animation
 let options = {
-    rootMargin: "-100px 0px",
-    threshold: 0
+    root: null,
+    rootMargin:  "0px",
+    threshold: .1,
 }
 function handleIntersect(entries){
     entries.forEach(entry => {
@@ -19,9 +21,9 @@ function handleIntersect(entries){
         }
     })
 }
-const observer = new IntersectionObserver
-(handleIntersect, options)
-
+const observer = new IntersectionObserver(handleIntersect, options)
 cards.forEach(card => {
     observer.observe(card)
 })
+observer.observe(section)
+
