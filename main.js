@@ -8,22 +8,22 @@ navBtn.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
 // Scroll Animation
-let options = {
+const ratio = .1
+const options = {
     root: null,
-    rootMargin:  "0px",
-    threshold: .1,
+    rootMargin: '0px',
+    threshold: ratio,
 }
-function handleIntersect(entries){
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = "translateY(0px)"
+const handleIntersect = function(entries, observer){
+    entries.forEach(function(entry){
+        if(entry.intersectionRatio > ratio){
+            entry.target.classList.add('hide-show')
+            observer.unobserve(entry.target)
         }
     })
 }
 const observer = new IntersectionObserver(handleIntersect, options)
-cards.forEach(card => {
-    observer.observe(card)
+document.querySelectorAll('.hide').forEach(function(r){
+    observer.observe(r)
 })
-observer.observe(section)
 

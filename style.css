@@ -15,6 +15,7 @@ li {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 /* small nav */
 .humburger {
@@ -225,13 +226,7 @@ a {
     width: 300px;
     position: relative;
     margin: 15px;
-    opacity: 0;
-    transform: translateY(500px);
-    transition: 2s ease;
-}
-.card.active {
-    opacity: 1;
-    transform: translateY(0);
+
 }
 .card-absolute {
     position: absolute;
@@ -754,6 +749,17 @@ a {
     font-size: 2em;
     cursor: pointer;
 }
+/* js animations */
+.hide {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s ease;
+}
+.hide-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* queuries */
 @media screen and (max-width: 1410px) {
     .nav3-container {
         width: 90%;
